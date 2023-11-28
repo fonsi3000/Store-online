@@ -85,8 +85,7 @@
                     <div class="col-lg-6 col-md-6">
                         <div class="header__top__left">
                             <ul>
-                                <li><i class="fa fa-envelope"></i> <?php echo $data['negocio']['correo']; ?></li>
-                                <li>Tienda online</li>
+                                <li>Conexion Mujer</li>
                             </ul>
                         </div>
                     </div>
@@ -114,7 +113,7 @@
             <div class="row">
                 <div class="col-lg-3">
                     <div class="header__logo">
-                        <a href="<?php echo BASE_URL; ?>"><img src="<?php echo BASE_URL; ?>public/img/logo.png" alt="LOGO" width="50"></a>
+                        <a href="<?php echo BASE_URL; ?>"><img src="<?php echo BASE_URL; ?>public/img/logo.png" alt="LOGO" width="100"></a>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -167,22 +166,14 @@
                                 <button type="submit" class="site-btn">BUSCAR</button>
                             </form>
                         </div>
-                        <div class="hero__search__phone">
-                            <div class="hero__search__phone__icon">
-                                <i class="fa fa-phone"></i>
-                            </div>
-                            <div class="hero__search__phone__text">
-                                <h5><?php echo $data['negocio']['telefono']; ?></h5>
-                                <span><?php echo $data['negocio']['direccion']; ?></span>
-                            </div>
-                        </div>
+                        
                     </div>
                     <?php if ($data['title'] == 'Pagina Principal') { ?>
-                        <div class="hero__item set-bg" data-setbg="<?php echo BASE_URL; ?>public/img/hero/banner.jpg">
+                        <div class="hero__item set-bg" data-setbg="<?php echo BASE_URL; ?>public/img/hero/baner.jpg">
                             <div class="hero__text">
-                                <span>FRUTA FRESCA</span>
-                                <h2>Vegetable <br />100% Organicos</h2>
-                                <p>Recogida y entrega gratuitas disponibles</p>
+                                <span style="color: #fff;">CONEXION MUJER</span>
+                                <h2 style="color: #fff;">Compra con un propósito, <br/>apoya a Mujeres Emprendedoras.</h2>
+                                <p style="color: #fff;">Recogida y entrega gratuitas disponibles</p>
                                 <a href="<?php echo BASE_URL . 'principal/productos'; ?>" class="primary-btn">Ver productos</a>
                             </div>
                         </div>
