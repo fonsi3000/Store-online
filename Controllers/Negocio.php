@@ -29,7 +29,10 @@ class Negocio extends Controller
             $user_smtp = strClean($_POST['user_smtp']);
             $puerto_smtp = strClean($_POST['puerto_smtp']);
             $pass_smtp = strClean($_POST['pass_smtp']);
-            if (empty($nombre) || empty($telefono) || empty($whatsapp) || empty($direccion) || empty($host_smtp) || empty($user_smtp) || empty($puerto_smtp) || empty($pass_smtp)) {
+            $mision = strClean($_POST['mision']);  // Nueva línea
+            $vision = strClean($_POST['vision']);  // Nueva línea
+
+            if (empty($nombre) || empty($telefono) || empty($whatsapp) || empty($direccion) || empty($host_smtp) || empty($user_smtp) || empty($puerto_smtp) || empty($pass_smtp) || empty($mision) || empty($vision)) {
                 $res = array('msg' => 'TODO LOS CAMPOS SON REQUERIDOS', 'type' => 'warning');
             } else {
                 $data = $this->model->actualizar(
@@ -42,6 +45,8 @@ class Negocio extends Controller
                     $user_smtp,
                     $puerto_smtp,
                     $pass_smtp,
+                    $mision,  // Nueva línea
+                    $vision,  // Nueva línea
                     $id
                 );
                 if ($data > 0) {
@@ -56,4 +61,5 @@ class Negocio extends Controller
         echo json_encode($res);
         die();
     }
+
 }

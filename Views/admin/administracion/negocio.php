@@ -88,6 +88,18 @@
                     </div>
                     <span id="errorDireccion" class="text-danger"></span>
                 </div>
+                <div class="col-md-6 mb-3">
+                    <label for="mision">Misión <span class="text-danger">*</span></label>
+                    <textarea id="mision" class="form-control" name="mision" rows="3" placeholder="Misión"><?php echo isset($data['negocio']['mision']) ? $data['negocio']['mision'] : ''; ?>
+                    </textarea>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label for="vision">Visión <span class="text-danger">*</span></label>
+                    <textarea id="vision" class="form-control" name="vision" rows="3" placeholder="Visión"><?php echo isset($data['negocio']['vision']) ? $data['negocio']['vision'] : ''; ?>
+                    </textarea>
+                </div>
+  
             </div>
             <div class="text-right">
                 <button class="btn btn-primary" type="submit" id="btnAccion">Actualizar</button>

@@ -44,6 +44,8 @@ CREATE TABLE IF NOT EXISTS `configuracion` (
   `user_smtp` varchar(100) COLLATE utf8mb4_general_ci NOT NULL,
   `pass_smtp` varchar(100) COLLATE utf8mb4_general_ci NOT NULL,
   `puerto_smtp` int NOT NULL,
+  `mision` text COLLATE utf8mb4_general_ci, -- Agregando la columna para Misión
+  `vision` text COLLATE utf8mb4_general_ci, -- Agregando la columna para Visión
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
